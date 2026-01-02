@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJ LAW & ASSOCIATES - Kantor Hukum Terpercaya</title>
+    <style>
+        /* Reset & Dasar */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { color: #333; line-height: 1.6; }
+        
+        /* Warna Identitas */
+        :root {
+            --primary: #0f172a; /* Navy Blue Gelap */
+            --accent: #c0a062;  /* Gold/Emas */
+            --light: #f8fafc;
+        }
+
+        /* Navigasi */
+        header { background: var(--primary); padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; color: white; position: sticky; top: 0; z-index: 100; }
+        .logo { font-size: 1.5rem; font-weight: bold; letter-spacing: 1px; }
+        .logo span { color: var(--accent); }
+        nav ul { display: flex; list-style: none; gap: 20px; }
+        nav a { color: white; text-decoration: none; font-weight: 500; transition: 0.3s; }
+        nav a:hover { color: var(--accent); }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('https://source.unsplash.com/1600x900/?law,office');
+            background-size: cover; background-position: center;
+            height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white; padding: 0 20px;
+        }
+        .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.2rem; margin-bottom: 2rem; max-width: 700px; }
+        .btn { background: var(--accent); color: var(--primary); padding: 12px 30px; text-decoration: none; font-weight: bold; border-radius: 4px; transition: 0.3s; }
+        .btn:hover { background: #d4b26f; }
+
+        /* Layanan */
+        .services { padding: 4rem 5%; background: var(--light); text-align: center; }
+        .section-title { margin-bottom: 3rem; color: var(--primary); }
+        .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+        .card { background: white; padding: 2rem; border-bottom: 4px solid var(--accent); box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: left; }
+        .card h3 { margin-bottom: 1rem; color: var(--primary); }
+
+        /* Kontak */
+        .contact { padding: 4rem 5%; display: flex; flex-wrap: wrap; gap: 2rem; justify-content: space-between; }
+        .contact-info, .contact-form { flex: 1; min-width: 300px; }
+        .contact-info h2 { color: var(--primary); margin-bottom: 1rem; }
+        .contact-item { margin-bottom: 1rem; display: flex; align-items: center; gap: 10px; }
+        
+        form input, form textarea { width: 100%; padding: 10px; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px; }
+        form button { background: var(--primary); color: white; border: none; padding: 12px 30px; cursor: pointer; }
+
+        /* Footer */
+        footer { background: var(--primary); color: white; text-align: center; padding: 2rem; margin-top: auto; }
+        
+        /* Mobile */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            nav { display: none; } /* Sederhana untuk demo, aslinya perlu hamburger menu */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">AJ LAW <span>& ASSOCIATES</span></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#services">Layanan</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Mitra Hukum Terpercaya Anda</h1>
+        <p>Menjunjung tinggi integritas dan memberikan solusi hukum yang tepat, cepat, dan akurat untuk setiap permasalahan Anda.</p>
+        <a href="#contact" class="btn">Jadwalkan Konsultasi</a>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="section-title">Area Praktik Kami</h2>
+        <div class="service-grid">
+            <div class="card">
+                <h3>⚖️ Litigasi & Sengketa</h3>
+                <p>Pendampingan hukum penuh dalam penyelesaian sengketa baik di dalam maupun di luar pengadilan.</p>
+            </div>
+            <div class="card">
+                <h3>🏢 Hukum Perusahaan</h3>
+                <p>Legal drafting, perizinan, merger & akuisisi, serta kepatuhan hukum untuk bisnis Anda.</p>
+            </div>
+            <div class="card">
+                <h3>👨‍👩‍👧 Hukum Keluarga</h3>
+                <p>Penanganan kasus perceraian, hak asuh anak, dan pembagian harta gono-gini dengan pendekatan personal.</p>
+            </div>
+            <div class="card">
+                <h3>🚔 Hukum Pidana</h3>
+                <p>Pembelaan hak-hak klien dalam proses penyelidikan, penyidikan hingga persidangan.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-info">
+            <h2>Hubungi Kami</h2>
+            <p style="margin-bottom: 20px;">Siap membantu permasalahan hukum Anda. Hubungi kami untuk konsultasi awal.</p>
+            
+            <div class="contact-item"><strong>📍 Alamat:</strong> Gedung Office Tower Lt. 12, Jakarta Selatan</div>
+            <div class="contact-item"><strong>📞 Telepon:</strong> (021) 555-0199</div>
+            <div class="contact-item"><strong>📧 Email:</strong> info@ajlaw.co.id</div>
+            <div class="contact-item"><strong>🕒 Jam Kerja:</strong> Senin - Jumat, 09.00 - 17.00</div>
+        </div>
+        
+        <div class="contact-form">
+            <form>
+                <input type="text" placeholder="Nama Lengkap" required>
+                <input type="email" placeholder="Alamat Email" required>
+                <input type="tel" placeholder="Nomor WhatsApp" required>
+                <textarea rows="5" placeholder="Deskripsi Singkat Kasus Anda"></textarea>
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 AJ LAW & ASSOCIATES. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
